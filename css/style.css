@@ -263,6 +263,11 @@ ul {
     text-decoration: none;
     border-radius: 17px;
 }
+@media screen and (min-width:0\0) {
+    .user_block .find {
+        height: 16px;
+    }
+}
 .user_block .find {
     width: 32px;
     font-size: 0;
