@@ -9,8 +9,12 @@ body {
     font-family: "Roboto", "Arial", sans-serif;
     background-color: #849d8f;
 }
-section {
-    
+section,
+header,
+footer,
+nav,
+main {
+    display: block;
 }
 h1 {
     font-size: 60px;
@@ -97,7 +101,6 @@ ul {
     display: inline-block;
     vertical-align: top;
     padding-top: 23px;
-    -webkit-margin-right: 30px;
     margin-right: 36px;
 }
 .main_nav > ul > li {
@@ -605,11 +608,13 @@ body input[type="radio"] {
 }
 .l_offer {
     position: relative;
-    margin-right: 16px;
+    margin-right: 20px;
     border-radius: 16px;
     background: #b30a2b url("../img/raspberry_bg.jpg") no-repeat;
 }
+
 .r_offer {
+    -webkit-margin-start: -4px;
     position: relative;
     border-radius: 16px;
     background: #43281d url("../img/chocolate_bg.jpg") no-repeat;
@@ -621,13 +626,18 @@ body input[type="radio"] {
 .cat_look ul {
     font-size: 0;
 }
-.act_prices > ul >  li,
+.act_prices > ul > li,
 .cat_look > ul > li {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    margin-right: 15px;
+    margin-right: 20px;
     width:200px;
+}
+.act_prices > ul > li:not(:first-child),
+.cat_look > ul > li:not(:first-child),
+.cat_look > ul > li:not(:nth-child(4n)) {
+    -webkit-margin-start: -4px
 }
 .act_prices li:nth-child(4n),
 .cat_look li:nth-child(4n) {
@@ -686,6 +696,7 @@ body input[type="radio"] {
 .cat_look > ul > li {
     height: 315px;
 }
+
 .cat_look > ul > li:hover .shadow {
     position: absolute;
     top: -10px;
@@ -729,6 +740,7 @@ body input[type="radio"] {
     text-decoration: none;
     border-radius: 16px;
 }
+
 .other_info {
     margin-bottom: 40px;
     font-size: 0;
@@ -782,7 +794,7 @@ body input[type="radio"] {
     vertical-align: top;
     width: 380px;
     height: 196px;
-    margin-right: 16px;
+    margin-right: 20px;
     padding: 24px 20px 0 20px;
     border-radius: 16px;
     background: #fff url("../img/strawberry_bg.jpg") no-repeat;
@@ -825,6 +837,7 @@ body input[type="radio"] {
 .newsletter {
     display: inline-block;
     vertical-align: top;
+    -webkit-margin-start: -4px;
     width: 410px;
     height: 210px;
     padding: 5px;
@@ -876,16 +889,6 @@ body input[type="radio"] {
     height: 430px;
     margin: 0 auto;
     background: #e0dccf url("../img/map_bg.jpg") no-repeat;
-}
-.glacy_map::after {
-    display: block;
-    content: "";
-    width: 218px;
-    height: 142px;
-    position: absolute;
-    top: 139px;
-    left: 186px;
-    background: url("../img/pointer_icon.png");
 }
 .glacy_map .address {
     position: absolute;
@@ -1247,8 +1250,12 @@ body input[type="radio"] {
     vertical-align: top;
 }
 .cat_head fieldset {
-    margin: 0 4px 16px 0;
+    margin: 0 16px 16px 0;
     border: none;
+}
+.cat_head fieldset:not(:first-child),
+.cat_head fieldset:not(:nth-child(4)) {
+    -webkit-margin-start: -11px;
 }
 .cat_head legend {
     margin:0 0 7px 17px;
