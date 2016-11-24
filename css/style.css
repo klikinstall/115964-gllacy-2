@@ -63,7 +63,7 @@ ul {
 .a_hover:active {
     color: #ffbc9e;
 }
-*.a_hover::after:hover {
+*.a_hover:hover::after {
     background: rgba(249,172,159,.3);
 }
 .icecream_bg {
@@ -106,8 +106,30 @@ ul {
     padding-top: 23px;
     margin-right: 53px;
 }
+/*Стили для сафари*/
+.main_nav::-moz-svg-foreign-content, :root .main_nav {
+    margin-right: 38px;
+}
+@media \\0 screen {
+    .main_nav {
+        margin-right: 38px;
+    }
+}
 .catalog_html .main_nav {
     margin-right: 50px;
+}
+/*Стили для сафари*/
+.catalog_html .main_nav::-moz-svg-foreign-content, :root .catalog_html .main_nav {
+    margin-right: 49px;
+}
+@media \\0 screen {
+    .catalog_html .main_nav {
+        margin-right: 49px;
+    }
+}
+/*Стили для ie*/
+.catalog_html .main_nav:-ms-input-placeholder, :root .catalog_html .main_nav {
+    margin-right: 49px;
 }
 .main_nav > ul > li {
     display: inline-block;
@@ -519,6 +541,11 @@ ul {
     padding-bottom: 41px;
     text-align: center;
 }
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    .global_offer {
+        margin-top: 269px;
+    }
+}
 .global_offer .slide {
     display: none;
 }
@@ -630,7 +657,15 @@ body input[type="radio"] {
     border-radius: 16px;
     background: #3b0003 url("../img/raspberry_bg.png") repeat-y;
 }
-
+/*Стили для сафари*/
+.l_offer::-moz-svg-foreign-content, :root .l_offer {
+    margin-right: 16px;
+}
+@media \\0 screen {
+    .l_offer {
+        margin-right: 16px;
+    }
+}
 .r_offer {
     position: relative;
     border-radius: 16px;
@@ -651,9 +686,30 @@ body input[type="radio"] {
     margin-right: 20px;
     width:200px;
 }
+/*Стили для сафари*/
+.act_prices > ul > li::-moz-svg-foreign-content, :root .act_prices > ul > li,
+.cat_look > ul > li::-moz-svg-foreign-content, :root .cat_look > ul > li {
+    margin-right: 12px;
+}
+@media \\0 screen {
+    .act_prices > ul > li,
+    .cat_look > ul > li {
+        margin-right: 16px;
+    }
+}
 .act_prices li:nth-child(4n),
 .cat_look li:nth-child(4n) {
     margin-right: 0;
+}
+.act_prices li:nth-child(4n)::-moz-svg-foreign-content, :root .act_prices li:nth-child(4n),
+.cat_look li:nth-child(4n)::-moz-svg-foreign-content, :root .cat_look li:nth-child(4n) {
+    margin-right: 0;
+}
+@media \\0 screen {
+    .act_prices li:nth-child(4n),
+    .cat_look li:nth-child(4n) {
+        margin-right: 0;
+    }
 }
 .act_prices .icecream_hit,
 .cat_look .icecream_hit {
@@ -803,6 +859,16 @@ body input[type="radio"] {
 .glacy_about p:nth-of-type(2n-1) {
     margin-right: 21px;
 }
+/*Стили для сафари*/
+.glacy_about p:nth-of-type(2n-1)::-moz-svg-foreign-content,
+:root .glacy_about p:nth-of-type(2n-1) {
+    margin-right: 18px;
+}
+@media \\0 screen {
+    .glacy_about p:nth-of-type(2n-1) {
+        margin-right: 18px;
+    }
+}
 .blog_news {
     display: inline-block;
     vertical-align: top;
@@ -811,6 +877,16 @@ body input[type="radio"] {
     padding: 22px 20px 80px 19px;
     border-radius: 16px;
     background: #fff url("../img/strawberry_bg.jpg") repeat-y;
+}
+/*Стили для сафари*/
+.blog_news::-moz-svg-foreign-content,
+:root .blog_news {
+    margin-right: 16px;
+}
+@media \\0 screen {
+    .blog_news {
+        margin-right: 16px;
+    }
 }
 .blog_news b {
     font-size: 16px;
@@ -905,33 +981,36 @@ body input[type="radio"] {
     top: 62px;
     right: 20px;
     width: 250px;
-    height: 278px;
-    padding: 28px 26px 0 26px;
+    padding: 28px 26px 31px 26px;
     border-radius: 13px;
     background: #fefefe;
 }
-
+.address_street {
+    margin-bottom: 11px;
+}
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    .address_street {
+        margin-bottom: 14px;
+    }
+}
 .glacy_map .address h3 {
     width: 173px;
-    margin: 0 0 3px 0;
+    margin: 0 0 6px 0;
     font-size: 14px;
     line-height: 20px;
     color: #323232;
     font-weight: 400;
 }
-.address_phone h3 {
-    padding-top: 11px;
-}
 .glacy_map .address b {
     font-size: 18px;
-    line-height: 16px;
+    line-height: 13px;
     font-weight: 700;
     color: #323232;
 }
 .glacy_map .address p {
     margin: 0;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 12px;
     font-weight: 400;
     color: #323232;
 }
@@ -939,13 +1018,16 @@ body input[type="radio"] {
     display: inline-block;
     vertical-align: top;
     text-decoration: none;
-    margin-top: 26px;
-    padding: 8px 24px 12px 29px ;
+    margin-top: 29px;
+    padding: 8px 22px 12px 31px ;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     color: #fefefe;
     border-radius: 20px;
+}
+.glacy_map .address_phone b {
+    line-height: 21px;
 }
 .main-footer {
     padding: 19px 0 8px 0;
@@ -1003,10 +1085,18 @@ body input[type="radio"] {
 .social_wrap li:active a {
     box-shadow: inset 0 2px 1px 0 #696969;
 }
-
 .docs {
     width: 340px;
     margin: 12px 52px 0 0;
+}
+/*Стили для сафари*/
+.docs::-moz-svg-foreign-content, :root .docs {
+    margin-right: 31px;
+}
+@media \\0 screen {
+    .docs {
+        margin-right: 31px;
+    }
 }
 .docs li {
     display: inline-block;
@@ -1044,7 +1134,6 @@ body input[type="radio"] {
     margin-top: -1px;
     background: rgba(255, 255, 255, 0.4);
 }
-
 .docs li:first-child a {
     font-weight: 700;
 }
@@ -1207,20 +1296,21 @@ body input[type="radio"] {
     border-bottom: none;
 }
 .catalog_icecream {
-    margin-top: -23px;
+    margin-top: -21px;
 }
 .cat_head {
     font-size: 0;
-    margin-bottom: 39px;
+    margin-bottom: 26px;
 }
 .cat_head p{
     display: inline-block;
     vertical-align: top;
     margin: 0;
-    margin-right: 7px;
+    margin-right: 6px;
     font-size: 14px;
     line-height: 16px;
     color: #fff;
+    word-spacing: 5px;
 }
 .cat_head p a {
     position: relative;
@@ -1246,7 +1336,7 @@ body input[type="radio"] {
     margin-top: 0;
     margin-bottom: 24px;
     font-size: 35px;
-    line-height: 41px;
+    line-height: 39px;
     color: #fff;
     font-weight: bold;
 }
@@ -1260,11 +1350,20 @@ body input[type="radio"] {
     vertical-align: top;
 }
 .cat_head fieldset {
-    margin: 0 16px 16px 0;
+    margin: 0 13px 12px 0;
     border: none;
 }
+/*Стили для сафари*/
+.cat_head fieldset::-moz-svg-foreign-content, :root .cat_head fieldset {
+    margin-right: 4px;
+}
+@media \\0 screen {
+    .cat_head fieldset {
+        margin-right: 4px;
+    }
+}
 .cat_head legend {
-    margin:0 0 7px 17px;
+    margin: 3px 0 7px 17px;
     font-size: 14px;
     line-height: 16px;
     color: #fff;
@@ -1275,7 +1374,7 @@ body input[type="radio"] {
     color: #fff;
 }
 .cat_head button {
-    margin-top: 23px;
+    margin-top: 24px;
     padding: 7px 27px 7px 29px;
     font-size: 16px;
     line-height: 18px;
@@ -1374,7 +1473,7 @@ button.cat_forms:hover {
 }
 .fat .cat_forms label {
     position: relative;
-    margin: 0 20px 0 30px;
+    margin: 0 18px 0 32px;
 }
 .fat .cat_forms label:last-of-type {
     margin-right: 0;
@@ -1383,7 +1482,7 @@ button.cat_forms:hover {
     display: inline-block;
     content: "";
     position: absolute;
-    left: -28px;
+    left: -30px;
     top: 2px;
     height: 18px;
     width: 18px;
@@ -1403,7 +1502,7 @@ button.cat_forms:hover {
     display: inline-block;
     content: "";
     position: absolute;
-    left: -24px;
+    left: -26px;
     top: 6px;
     height: 12px;
     width: 12px;
@@ -1434,6 +1533,35 @@ button.cat_forms:hover {
     border-color: rgba(248, 247, 244, 0.4);
     border-width: 1px;
 }
+.cat_head .fillers {
+    margin-right: 17px;
+}
+/*Стили для safari*/
+.cat_head .fillers::-moz-svg-foreign-content,
+:root .cat_head .fillers {
+    margin-right: 15px;
+}
+@media \\0 screen {
+    .cat_head .fillers {
+        margin-right: 15px;
+    }
+}
+.cat_head .fillers label::-moz-svg-foreign-content,
+:root .cat_head .fillers label {
+    margin-right: 18px;
+    margin-left: 28px;
+}
+@media \\0 screen {
+    .cat_head .fillers label {
+        margin-right: 18px;
+        margin-left: 28px;
+    }
+}
+/*Стили для ie*/
+.cat_head .fillers:-ms-input-placeholder,
+:root .cat_head .fillers {
+    margin-right: 15px;
+}
 .fillers b {
     display: block;
     margin-bottom: 7px;
@@ -1443,7 +1571,7 @@ button.cat_forms:hover {
 }
 .fillers label {
     position: relative;
-    margin: 0 20px 0 31px;
+    margin: 0 22px 0 32px;
 }
 .fillers label:last-child {
     margin-right: 0;
@@ -1485,9 +1613,6 @@ button.cat_forms:hover {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-.fillers .cat_forms {
-    margin-right: 5px;
-}
 button.cat_forms:hover {
     padding: 9px 29px 9px 31px;
     color: #323232;
@@ -1502,7 +1627,7 @@ button.cat_forms:active {
 }
 .cat_look {
     font-size: 0;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
 }
 .ice_photo {
     display: inline-block;
@@ -1539,15 +1664,16 @@ button.cat_forms:active {
 .cat_look .paginator li {
     display: inline-block;
     vertical-align: top;
-    margin-right: 3px;
+    margin-right: 5px;
 }
 .cat_look .paginator li a {
     display: block;
-    width: 26px;
+    width: 25px;
     height: 21px;
     padding-top: 5px;
     font-size: 16px;
-    line-height: 16px;
+    font-weight: 700;
+    line-height: 18px;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -1569,6 +1695,25 @@ button.cat_forms:active {
     border: none;
     background: #fff;
 }
+.cat_look .paginator .prev,
+.cat_look .paginator .next {
+    height: 8px;
+    width: 8px;
+    margin-top: 9px;
+    padding: 0;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-radius: 0;
+}
 .cat_look .paginator .prev {
-    color: rgba(255, 255, 255, 0.2);
+    margin-right: 10px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.cat_look .paginator .next {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.cat_look .paginator .endoflist {
+    border-color: rgba(255, 255, 255, 0.2);
 }
