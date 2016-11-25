@@ -104,32 +104,6 @@ ul {
     display: inline-block;
     vertical-align: top;
     padding-top: 23px;
-    margin-right: 53px;
-}
-/*Стили для сафари*/
-.main_nav::-moz-svg-foreign-content, :root .main_nav {
-    margin-right: 38px;
-}
-@media \\0 screen {
-    .main_nav {
-        margin-right: 38px;
-    }
-}
-.catalog_html .main_nav {
-    margin-right: 50px;
-}
-/*Стили для сафари*/
-.catalog_html .main_nav::-moz-svg-foreign-content, :root .catalog_html .main_nav {
-    margin-right: 49px;
-}
-@media \\0 screen {
-    .catalog_html .main_nav {
-        margin-right: 49px;
-    }
-}
-/*Стили для ie*/
-.catalog_html .main_nav:-ms-input-placeholder, :root .catalog_html .main_nav {
-    margin-right: 49px;
 }
 .main_nav > ul > li {
     display: inline-block;
@@ -233,6 +207,7 @@ ul {
 .top_head .user_block {
     display: inline-block;
     vertical-align: top;
+    float: right;
     width: 265px;
     padding-top: 23px;
 }
@@ -537,13 +512,14 @@ ul {
 }
 .global_offer {
     position: relative;
-    margin-top: 266px;
+    margin-top: 317px;
     padding-bottom: 41px;
     text-align: center;
 }
+/*Стили для chrome и opera*/
 @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
     .global_offer {
-        margin-top: 269px;
+        margin-top: 318px;
     }
 }
 .global_offer .slide {
@@ -653,21 +629,12 @@ body input[type="radio"] {
 }
 .l_offer {
     position: relative;
-    margin-right: 20px;
     border-radius: 16px;
     background: #3b0003 url("../img/raspberry_bg.png") repeat-y;
 }
-/*Стили для сафари*/
-.l_offer::-moz-svg-foreign-content, :root .l_offer {
-    margin-right: 16px;
-}
-@media \\0 screen {
-    .l_offer {
-        margin-right: 16px;
-    }
-}
 .r_offer {
     position: relative;
+    float: right;
     border-radius: 16px;
     background: #43281d url("../img/chocolate_bg.png") repeat-y;
 }
@@ -873,20 +840,9 @@ body input[type="radio"] {
     display: inline-block;
     vertical-align: top;
     width: 381px;
-    margin-right: 20px;
     padding: 22px 20px 80px 19px;
     border-radius: 16px;
     background: #fff url("../img/strawberry_bg.jpg") repeat-y;
-}
-/*Стили для сафари*/
-.blog_news::-moz-svg-foreign-content,
-:root .blog_news {
-    margin-right: 16px;
-}
-@media \\0 screen {
-    .blog_news {
-        margin-right: 16px;
-    }
 }
 .blog_news b {
     font-size: 16px;
@@ -926,6 +882,7 @@ body input[type="radio"] {
 .newsletter {
     display: inline-block;
     vertical-align: top;
+    float: right;
     width: 410px;
     padding: 5px;
     border-radius: 16px;
@@ -1087,16 +1044,7 @@ body input[type="radio"] {
 }
 .docs {
     width: 340px;
-    margin: 12px 52px 0 0;
-}
-/*Стили для сафари*/
-.docs::-moz-svg-foreign-content, :root .docs {
-    margin-right: 31px;
-}
-@media \\0 screen {
-    .docs {
-        margin-right: 31px;
-    }
+    margin: 12px 0 0 0;
 }
 .docs li {
     display: inline-block;
@@ -1136,6 +1084,9 @@ body input[type="radio"] {
 }
 .docs li:first-child a {
     font-weight: 700;
+}
+.copyright {
+    float: right;
 }
 .copyright p {
     margin-top: -8px;
@@ -1296,7 +1247,7 @@ body input[type="radio"] {
     border-bottom: none;
 }
 .catalog_icecream {
-    margin-top: -21px;
+    margin-top: -20px;
 }
 .cat_head {
     font-size: 0;
@@ -1340,6 +1291,12 @@ body input[type="radio"] {
     color: #fff;
     font-weight: bold;
 }
+/*Стили для chrome и opera*/
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    .cat_head h1 {
+        margin-bottom: 27px;
+    }
+}
 .sort,
 .price_range,
 .fat,
@@ -1353,8 +1310,15 @@ body input[type="radio"] {
     margin: 0 13px 12px 0;
     border: none;
 }
+/*Стили для chrome и opera*/
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    .cat_head fieldset {
+        margin-bottom: 14px;
+    }
+}
 /*Стили для сафари*/
-.cat_head fieldset::-moz-svg-foreign-content, :root .cat_head fieldset {
+.cat_head fieldset::-moz-svg-foreign-content,
+:root .cat_head fieldset {
     margin-right: 4px;
 }
 @media \\0 screen {
@@ -1374,12 +1338,22 @@ body input[type="radio"] {
     color: #fff;
 }
 .cat_head button {
+    float: right;
     margin-top: 24px;
     padding: 7px 27px 7px 29px;
     font-size: 16px;
     line-height: 18px;
     color: #fff;
     border: 2px solid #fff;
+}
+/*Стили для safari*/
+.cat_head button::-moz-svg-foreign-content, :root .cat_head button {
+    margin-top: 16px;
+}
+@media \\0 screen {
+    .cat_head button {
+        margin-top: 16px;
+    }
 }
 .cat_forms {
     position: relative;
@@ -1533,19 +1507,7 @@ button.cat_forms:hover {
     border-color: rgba(248, 247, 244, 0.4);
     border-width: 1px;
 }
-.cat_head .fillers {
-    margin-right: 17px;
-}
 /*Стили для safari*/
-.cat_head .fillers::-moz-svg-foreign-content,
-:root .cat_head .fillers {
-    margin-right: 15px;
-}
-@media \\0 screen {
-    .cat_head .fillers {
-        margin-right: 15px;
-    }
-}
 .cat_head .fillers label::-moz-svg-foreign-content,
 :root .cat_head .fillers label {
     margin-right: 18px;
@@ -1556,11 +1518,6 @@ button.cat_forms:hover {
         margin-right: 18px;
         margin-left: 28px;
     }
-}
-/*Стили для ie*/
-.cat_head .fillers:-ms-input-placeholder,
-:root .cat_head .fillers {
-    margin-right: 15px;
 }
 .fillers b {
     display: block;
